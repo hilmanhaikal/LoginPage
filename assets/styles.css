@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('images/loginBackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Translucent white */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Shadow */
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-right: 45px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field input:focus {
+    border-color: #6D83F2;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+}
+
+.login-container button {
+    width: 100%;
+    background-color: #6D83F2; /* Button color */
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 15px;
+}
+
+.login-container button:hover {
+    background-color: #4a66c2; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.toggle-password {
+    font-size: 18px;
+}
+
+.input-validation {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-validation span {
+    display: block;
+    font-size: 12px;
+    color: red;
+}
+
+/* Separator styling */
+.separator {
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    height: 1px;
+    width: 40%;
+    background: #ccc;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+}
+
+.separator::before {
+    left: 0;
+}
+
+.separator::after {
+    right: 0;
+}
+
+.separator {
+    color: #444;
+    font-size: 14px;
+}
+
+/* Google and Apple button styling */
+.auth-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #444;
+    border: 1px solid #ddd;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin: 0 auto;
+}
+
+.auth-btn:hover {
+    background-color: #f7f7f7;
+    border-color: #ccc;
+}
+
+.auth-btn i {
+    font-size: 20px;
+}
+
+.apple-btn {
+    background-color: black; /* Apple button color */
+    color: white;
+}
+
+.create-account {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.create-account a {
+    color: #6D83F2; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.create-account a:hover {
+    color: #4a66c2; /* Darker shade on hover */
+}
+

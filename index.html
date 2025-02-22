@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page Template</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://kit.fontawesome.com/2f4bfb8b49.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>L O G I N</h2>
+    <form id="loginForm">
+        <div id="error" class="error-message"></div>
+        
+        <div class="input-field">
+            <input type="text" id="username" placeholder="Username" required />
+            <i class="fa fa-user"></i>
+        </div>
+        
+        <div class="input-field">
+            <input type="password" id="password" placeholder="Password" required />
+            <i class="fa fa-eye toggle-password" id="togglePassword"></i>
+        </div>
+        
+        <div class="input-validation" id="validationMessage"></div>
+        
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="separator">or</div>
+    
+    <button class="auth-btn">
+        <i class="fab fa-google"></i>
+    </button>
+
+    <button class="auth-btn apple-btn">
+        <i class="fab fa-apple"></i>
+    </button>
+
+    <div class="create-account">
+        <p>Don't have an account? <a href="#" class="create-account-link">Create a new account</a></p>
+    </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
